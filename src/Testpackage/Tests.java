@@ -5,7 +5,6 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
-import Vehicles.Car;
 import Vehicles.Color;
 
 public class Tests {
