@@ -26,13 +26,13 @@ public class Tests {
 	@Test
 	public void EqualCars(){
 		Car car2 = new Car(3,5,191,color, "Seat");
-		assertTrue("Cars should be equal",car.equals(car2));
+		assertEquals("Cars should be equal",car,car2);
 	}
 	
 	@Test
 	public void EqualBikes(){
 		Bike bike2=new Bike(color, "Northwave");
-		assertTrue("Bikes should be equal",bike.equals(bike2));
+		assertEquals("Bikes should be equal",bike ,bike2);
 	}
 	
 	@Test
@@ -45,8 +45,8 @@ public class Tests {
 	
 	@Test
 	public void testBikeColor(){
-		assertEquals(bike.getColor().getRed(), color.getGreen());
-		assertEquals(bike.getColor().getBlue(), color.getBlue());
+		assertEquals("Color (Red) is not equal" ,bike.getColor().getRed(), color.getRed());
+		assertEquals("Color (Blue) is not equal" ,bike.getColor().getBlue(), color.getBlue());
 	}
 	
 	@Test

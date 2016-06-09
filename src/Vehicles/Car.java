@@ -51,17 +51,14 @@ public class Car implements Vehicle {
 				&& this.speed == other.getSpeed() && this.color.equals(other.getColor()));
 	}
 
-	@Override
 	public void drive(int actualKilometers) {
 		this.kilometers = this.kilometers + actualKilometers;
 	}
 
-	@Override
 	public int milage() {
 		return this.kilometers;
 	}
 
-	@Override
 	public void paint(int red, int green, int blue) {
 		Color color = new Color(red,blue,green);
 		this.color = color;
