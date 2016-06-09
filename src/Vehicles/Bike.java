@@ -5,9 +5,8 @@ public class Bike implements Vehicle {
 	private Color color;
 	private String brand;
 
-	public Bike(int kilometers, Color color, String brand) {
-		this.kilometers = kilometers;
-		this.color = color;
+	public Bike(Color color, String brand) {
+		this.kilometers = 0;
 		this.brand = brand;
 	}
 
@@ -31,6 +30,12 @@ public class Bike implements Vehicle {
 	@Override
 	public int milage() {
 		return this.kilometers;
+	}
+
+	@Override
+	public void paint(int red, int green, int blue) {
+		Color color = new Color(red,green,blue);
+		this.color = color;
 	}
 
 }

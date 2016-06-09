@@ -61,4 +61,10 @@ public class Car implements Vehicle {
 		return this.kilometers;
 	}
 
+	@Override
+	public void paint(int red, int green, int blue) {
+		Color color = new Color(red,blue,green);
+		this.color = color;
+	}
+
 }
