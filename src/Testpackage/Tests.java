@@ -24,6 +24,18 @@ public class Tests {
 	}
 
 	@Test
+	public void EqualCars(){
+		Car car2 = new Car(3,5,191,color, "Seat");
+		assertTrue("Cars should be equal",car.equals(car2));
+	}
+	
+	@Test
+	public void EqualBikes(){
+		Bike bike2=new Bike(color, "Northwave");
+		assertTrue("Bikes should be equal",bike.equals(bike2));
+	}
+	
+	@Test
 	public void ColorNegTestBlue() {
 		Color color1 = new Color(300, 300, 300);
 		Color color2 = new Color(-1,-1,-1);
