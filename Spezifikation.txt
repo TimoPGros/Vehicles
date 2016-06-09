@@ -1,0 +1,36 @@
+interface vehicle:drive paint
+class car implements vehicle: seats, door, color, speed, kilometers
+class bike implements vehicle: color kilometers
+
+
+class color mit rot grün blauwert
+
+schreiben sie jeweils eine toString und eine equals methode
+
+ein farbwert kann zwischen 0 und 255 liegen 
+
+die drive methode setzt den kilometerzähler um die mittgegebenen kilometer erhöhen kann natürlich
+keine negativen werte akzeptieren 
+die paint methode gibt dem vehicle einen neu farbe
+die Anzahl der Türen können 3 oder 5 sein
+
+die Anzahl der Sitze 2 4 oder 5
+
+
+
+Im folgenden findet ihr die Spezifikation für unser kleines Programm.
+	
+	Es gibt ein Interface vehicle in der die Methoden drive und paint existieren.
+	
+	Die Methode paint gibt unserem vehicle eine neue Farbe.
+	Die Methode drive lässt unser vehicle fahren und setzt somit den kilometerzähler hoch. Es dürfen natürlich keine negativen Werte mitgegeben werden.
+	
+	Desweiteren gibt es die Klasse Car,Bike und Color:
+	
+	Ein Auto/Car besitzt eine Anzahl an Sitzen Türen eine Höchstgeschwindigkeit einen Kilometerstand sowie eine Farbe.
+	
+	Es gibt nur 3 und 5 Türer und die Anzahl der Sitze kann 2 3 oder 5 sein. Am Anfang steht der Kilometerzähler natürlich bei 0. Die Höchstgeschwindigkeit liegt zwischen 0 und 300.
+	
+	Die Klasse Bike besitzt eine Farbe und einen Kilometerstand.
+	
+	Farben besitzen einen rot grün und blauwert, wobei ein Farbwert zwischen 0 und 255 liegen kann.
