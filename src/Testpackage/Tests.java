@@ -39,8 +39,8 @@ public class Tests {
 	public void ColorNegTestBlue() {
 		Color color1 = new Color(300, 300, 300);
 		Color color2 = new Color(-1,-1,-1);
-		assertTrue("acceptet negative blue value", color2.getBlue() >= 0);
-		assertFalse("acceptet too high blue value", color1.getBlue() > 255);
+		assertTrue("accepted negative blue value", color2.getBlue() >= 0);
+		assertFalse("accepted too high blue value", color1.getBlue() > 255);
 	}
 	
 	@Test
@@ -59,7 +59,7 @@ public class Tests {
 	@Test
 	public void testCarPaint(){
 	    car.paint(255, 0, 255);
-	    assertEquals(car.getColor(), testColor);	    
+	    assertEquals("Car should have this color by now",car.getColor(), testColor);	    
 	}	
 	
 	@Test
@@ -70,6 +70,7 @@ public class Tests {
 		}
 		catch (Exception e){};
 	}
+	
 	
 	@Test
 	public void testDrivePositive(){
