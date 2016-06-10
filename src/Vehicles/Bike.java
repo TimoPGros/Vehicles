@@ -26,7 +26,7 @@ public class Bike implements Vehicle {
 		this.kilometers = this.kilometers + actualKilometers;
 	}
 
-	public int milage() {
+	public int mileage() {
 		return this.kilometers;
 	}
 
