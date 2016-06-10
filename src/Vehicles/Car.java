@@ -13,7 +13,7 @@ public class Car implements Vehicle {
 		this.brand = brand;
 		this.kilometers = 0;
 	}
-
+ 
 	public String getBrand() {
 		return this.brand;
 	}
