@@ -19,23 +19,23 @@ public class Car implements Vehicle {
 	}
 
 	public int getDoors() {
-		return doors;
+		return this.doors;
 	}
 
 	public int getSeats() {
-		return seats;
+		return this.seats;
 	}
 
 	public int getSpeed() {
-		return speed;
+		return this.speed;
 	}
 
 	public int getKilometers() {
-		return kilometers;
+		return this.kilometers;
 	}
 
 	public Color getColor() {
-		return color;
+		return this.color;
 	}
 
 	public void setSpeed(int speed) {

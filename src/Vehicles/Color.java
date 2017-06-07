@@ -14,11 +14,11 @@ public class Color {
 	}
 
 	public int getRed() {
-		return red;
+		return this.red;
 	}
 
 	public int getGreen() {
-		return green;
+		return this.green;
 	}
 
 	@Override

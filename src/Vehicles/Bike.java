@@ -11,15 +11,15 @@ public class Bike implements Vehicle {
 	}
 
 	public int getKilometers() {
-		return kilometers;
+		return this.kilometers;
 	}
 
 	public Color getColor() {
-		return color;
+		return this.color;
 	}
 
 	public String getBrand() {
-		return brand;
+		return this.brand;
 	}
 
 	public void drive(int actualKilometers) {
